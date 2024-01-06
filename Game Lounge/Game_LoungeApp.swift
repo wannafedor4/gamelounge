@@ -7,5 +7,9 @@ struct Game_LoungeApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        Settings {
+            SettingsView()
+        }
     }
 }
