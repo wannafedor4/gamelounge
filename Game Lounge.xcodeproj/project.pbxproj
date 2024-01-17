@@ -16,6 +16,7 @@
 		AE2166F22B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2166F12B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift */; };
 		AE2167002B48C43C0018E860 /* LoungeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2166FF2B48C43C0018E860 /* LoungeView.swift */; };
 		AE2167022B48C4910018E860 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2167012B48C4910018E860 /* CommonFunctions.swift */; };
+		AEDB62412B59BD0800E2DFD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB62402B59BD0800E2DFD7 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AE2166F12B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_LoungeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE2166FF2B48C43C0018E860 /* LoungeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeView.swift; sourceTree = "<group>"; };
 		AE2167012B48C4910018E860 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		AEDB62402B59BD0800E2DFD7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				AE2166D12B48A41D0018E860 /* Game_LoungeApp.swift */,
-				AE2166FE2B48C2FF0018E860 /* Views */,
+				AEDB62402B59BD0800E2DFD7 /* SettingsView.swift */,
 				AE2167012B48C4910018E860 /* CommonFunctions.swift */,
+				AE2166FE2B48C2FF0018E860 /* Views */,
 				AE2166D72B48A41F0018E860 /* Assets.xcassets */,
 				AE2166DC2B48A41F0018E860 /* Game_Lounge.entitlements */,
 				AE2166D92B48A41F0018E860 /* Preview Content */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDB62412B59BD0800E2DFD7 /* SettingsView.swift in Sources */,
 				AE2167002B48C43C0018E860 /* LoungeView.swift in Sources */,
 				AE2166D42B48A41D0018E860 /* ContentView.swift in Sources */,
 				AE2167022B48C4910018E860 /* CommonFunctions.swift in Sources */,

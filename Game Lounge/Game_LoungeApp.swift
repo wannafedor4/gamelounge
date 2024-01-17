@@ -4,7 +4,7 @@ import SwiftData
 @main
 struct Game_LoungeApp: App {
     var body: some Scene {
-        WindowGroup {
+        Window("Game Lounge", id: "main") {
             ContentView()
         }
         
