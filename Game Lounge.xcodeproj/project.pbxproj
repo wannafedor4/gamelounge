@@ -16,6 +16,7 @@
 		AE2166F22B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2166F12B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift */; };
 		AE2167002B48C43C0018E860 /* LoungeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2166FF2B48C43C0018E860 /* LoungeView.swift */; };
 		AE2167022B48C4910018E860 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2167012B48C4910018E860 /* CommonFunctions.swift */; };
+		AE9830BC2B65FE30004DDF53 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9830BB2B65FE30004DDF53 /* LibraryView.swift */; };
 		AEDB62412B59BD0800E2DFD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB62402B59BD0800E2DFD7 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		AE2166F12B48A41F0018E860 /* Game_LoungeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_LoungeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE2166FF2B48C43C0018E860 /* LoungeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeView.swift; sourceTree = "<group>"; };
 		AE2167012B48C4910018E860 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		AE9830BB2B65FE30004DDF53 /* LibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		AEDB62402B59BD0800E2DFD7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				AE2166D32B48A41D0018E860 /* ContentView.swift */,
+				AE9830BB2B65FE30004DDF53 /* LibraryView.swift */,
 				AE2166FF2B48C43C0018E860 /* LoungeView.swift */,
 			);
 			path = Views;
@@ -210,7 +213,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					AE2166CD2B48A41D0018E860 = {
 						CreatedOnToolsVersion = 15.2;
@@ -280,6 +283,7 @@
 				AE2167002B48C43C0018E860 /* LoungeView.swift in Sources */,
 				AE2166D42B48A41D0018E860 /* ContentView.swift in Sources */,
 				AE2167022B48C4910018E860 /* CommonFunctions.swift in Sources */,
+				AE9830BC2B65FE30004DDF53 /* LibraryView.swift in Sources */,
 				AE2166D22B48A41D0018E860 /* Game_LoungeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +355,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -414,6 +419,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -445,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Game Lounge/Preview Content\"";
 				DEVELOPMENT_TEAM = 5VSGRBC7ZH;
 				ENABLE_PREVIEWS = YES;
@@ -475,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Game Lounge/Preview Content\"";
 				DEVELOPMENT_TEAM = 5VSGRBC7ZH;
 				ENABLE_PREVIEWS = YES;
@@ -502,6 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -520,6 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -537,6 +547,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wannafedor4.Game-LoungeUITests";
@@ -553,6 +564,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wannafedor4.Game-LoungeUITests";

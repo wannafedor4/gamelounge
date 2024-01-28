@@ -1,10 +1,3 @@
-//
-//  LibraryView.swift
-//  Game Lounge
-//
-//  Created by Gavin Gichini on 1/7/24.
-//
-
 import SwiftUI
 
 struct LibraryView: View {

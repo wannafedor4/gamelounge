@@ -1,10 +1,3 @@
-//
-//  SettingsView.swift
-//  Game Lounge
-//
-//  Created by Gavin Gichini on 1/18/24.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
