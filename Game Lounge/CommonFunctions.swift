@@ -1,10 +1,9 @@
 import Foundation
+import SwiftUI
 
 func launchGame(name: String) {
     
 }
-
-import Foundation
 
 func shell(_ command: String) -> String {
     let task = Process()

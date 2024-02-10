@@ -7,6 +7,7 @@ struct Game_LoungeApp: App {
         Window("Game Lounge", id: "main") {
             ContentView()
         }
+        .modelContainer(for: Game.self)
         
         Settings {
             SettingsView()

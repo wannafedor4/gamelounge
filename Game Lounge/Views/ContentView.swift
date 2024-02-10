@@ -1,48 +1,67 @@
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-
-    @State private var notificationsPresented = false
-
+    
+    @Environment(\.modelContext) var modelContext
+    
+    @State private var removalPresented = false
+    @State var sidebarSelection = "lounge"
+    
+    @Query var games: [Game]
+    
     var body: some View {
-        NavigationSplitView {
-            List {
+        NavigationSplitView() {
+            List(selection: $sidebarSelection) {
                 NavigationLink {
                     LoungeView()
                 } label: {
                     Label("Lounge", systemImage: "chair.lounge")
-                }
+                }.tag("lounge")
+                NavigationLink {
+                    TranslationLayersView()
+                } label: {
+                    Label("Translation Layers", systemImage: "powerplug")
+                }.tag("translation")
                 NavigationLink {
                     LibraryView()
                 } label: {
                     Label("Library", systemImage: "books.vertical")
-                }
+                }.tag("library")
                 NavigationLink {
                     Text("Hot Stuff")
                 } label: {
                     Label("Hot Stuff", systemImage: "flame")
-                }
+                }.tag("hot")
                 NavigationLink {
                     Text("Wikis")
                 } label: {
                     Label("Wikis", systemImage: "eyeglasses")
-                }
+                }.tag("wikis")
                 Section("Library") {
-                    
+                    ForEach(games) { game in
+                        Text(game.displayName)
+                            .contextMenu {
+                                Button(role: .destructive) {
+                                    removalPresented = true
+                                } label: {
+                                    Label("Remove", systemImage: "trash")
+                                }
+                                .alert("Important message", isPresented: $removalPresented) {
+                                            Button("OK", role: .cancel) { }
+                                        }
+                            }
+                    }
                 }
             }
+            .frame(minWidth: 200)
             .listStyle(.sidebar)
-            .toolbar(removing: .sidebarToggle)
             .toolbar {
-                ToolbarItem(placement: .navigation) {
+                ToolbarItem {
                     Button {
-                        notificationsPresented = true
+                        addSamples()
                     } label: {
-                        Label("Notifications", systemImage: "bell")
-                    }
-                    .popover(isPresented: $notificationsPresented) {
-                        Text("It's a Developer Preview, idiot.")
-                            .padding()
+                        Label("Add Game", systemImage: "plus")
                     }
                 }
             }
@@ -59,6 +78,11 @@ struct ContentView: View {
             
         }
         .background(VisualEffect())
+    }
+    func addSamples() {
+        let gamey = Game(displayName: "Gamey", path: "/Applications/Gamey.app", type: 1)
+        modelContext.insert(gamey)
+        print("Plus button pressed!")
     }
 }
 

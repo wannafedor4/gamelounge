@@ -1,11 +1,16 @@
 import SwiftUI
+import Swift
+import Foundation
 
 struct LibraryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            GameCard(gameTitle: "Gamey", gameIcon: "Placeholder Icon")
+                .navigationTitle("Library")
+        }
     }
 }
 
 #Preview {
-    LibraryView()
+    ContentView(sidebarSelection: "library")
 }
